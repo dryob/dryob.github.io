@@ -4,16 +4,16 @@ $(function() {
 });
 
 async function main() {
-
     print_warning();
 
 
-    const stakingTokenAddr = COMP_TOKEN_ADDR;
-    const stakingTokenTicker = "COMP";
-    const rewardPoolAddr = "0xadceEB763dbd6F9bA7eFb7564AF2518a7fB49e7b";
-    const rewardTokenAddr = SHRIMP_TOKEN_ADDR;
-    const balancerPoolTokenAddr = "0xadceeb763dbd6f9ba7efb7564af2518a7fb49e7b";
-    const rewardTokenTicker = "SHRIMP";
+
+    const stakingTokenAddr = LEND_TOKEN_ADDR;
+    const stakingTokenTicker = "LEND";
+    const rewardPoolAddr = "0x6009A344C7F993B16EBa2c673fefd2e07f9be5FD";
+    const rewardTokenAddr = YAM_TOKEN_ADDR;
+    const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
+    const rewardTokenTicker = "YAM";
 
     const App = await init_ethers();
 
@@ -33,9 +33,10 @@ async function main() {
     const yamScale = await YAM_TOKEN.yamsScalingFactor() / 1e18;
 
     const stakedYAmount = await Y_STAKING_POOL.balanceOf(App.YOUR_ADDRESS) / 1e18;
-    const earnedYFFI = yamScale * await Y_STAKING_POOL.earned(App.YOUR_ADDRESS) / 1e18;
+    const earnedYFFI = yamScale * (await Y_STAKING_POOL.earned(App.YOUR_ADDRESS)) / 1e18;
     const totalSupplyY = await Y_TOKEN.totalSupply() / 1e18;
     const totalStakedYAmount = await Y_TOKEN.balanceOf(rewardPoolAddr) / 1e18;
+
 
     // Find out reward rate
     const weekly_reward = (await get_synth_weekly_rewards(Y_STAKING_POOL)) * await YAM_TOKEN.yamsScalingFactor() / 1e18;
@@ -54,11 +55,13 @@ async function main() {
     // Look up prices
     // const prices = await lookUpPrices(["yearn-finance"]);
     // const YFIPrice = prices["yearn-finance"].usd;
-    const prices = await lookUpPrices(["compound-governance-token", "ethereum", "yam"]);
-    const stakingTokenPrice = prices["compound-governance-token"].usd;
+    const prices = await lookUpPrices(["ethlend", "ethereum", "yam"]);
+    const stakingTokenPrice = prices["ethlend"].usd;
 
     // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
     const rewardTokenPrice = prices["yam"].usd;
+
+
 
     // Finished. Start printing
 

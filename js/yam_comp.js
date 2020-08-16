@@ -10,10 +10,10 @@ async function main() {
 
     const stakingTokenAddr = COMP_TOKEN_ADDR;
     const stakingTokenTicker = "COMP";
-    const rewardPoolAddr = "0xadceEB763dbd6F9bA7eFb7564AF2518a7fB49e7b";
-    const rewardTokenAddr = SHRIMP_TOKEN_ADDR;
-    const balancerPoolTokenAddr = "0xadceeb763dbd6f9ba7efb7564af2518a7fb49e7b";
-    const rewardTokenTicker = "SHRIMP";
+    const rewardPoolAddr = "0x8538E5910c6F80419CD3170c26073Ff238048c9E";
+    const rewardTokenAddr = YAM_TOKEN_ADDR;
+    const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
+    const rewardTokenTicker = "YAM";
 
     const App = await init_ethers();
 

@@ -4,16 +4,15 @@ $(function() {
 });
 
 async function main() {
-
     print_warning();
 
 
-    const stakingTokenAddr = COMP_TOKEN_ADDR;
-    const stakingTokenTicker = "COMP";
-    const rewardPoolAddr = "0xadceEB763dbd6F9bA7eFb7564AF2518a7fB49e7b";
-    const rewardTokenAddr = SHRIMP_TOKEN_ADDR;
-    const balancerPoolTokenAddr = "0xadceeb763dbd6f9ba7efb7564af2518a7fb49e7b";
-    const rewardTokenTicker = "SHRIMP";
+    const stakingTokenAddr = LINK_TOKEN_ADDR;
+    const stakingTokenTicker = "LINK";
+    const rewardPoolAddr = "0xFDC28897A1E32B595f1f4f1D3aE0Df93B1eee452";
+    const rewardTokenAddr = YAM_TOKEN_ADDR;
+    const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
+    const rewardTokenTicker = "YAM";
 
     const App = await init_ethers();
 
@@ -54,8 +53,8 @@ async function main() {
     // Look up prices
     // const prices = await lookUpPrices(["yearn-finance"]);
     // const YFIPrice = prices["yearn-finance"].usd;
-    const prices = await lookUpPrices(["compound-governance-token", "ethereum", "yam"]);
-    const stakingTokenPrice = prices["compound-governance-token"].usd;
+    const prices = await lookUpPrices(["chainlink", "ethereum", "yam"]);
+    const stakingTokenPrice = prices["chainlink"].usd;
 
     // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
     const rewardTokenPrice = prices["yam"].usd;
