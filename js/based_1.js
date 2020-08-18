@@ -63,7 +63,7 @@ async function main() {
     // Finished. Start printing
 
     _print("========== PRICES ==========")
-    _print(`1 ${rewardTokenTicker}   = $${rewardTokenPrice}`);
+    _print(`1 ${rewardTokenTicker}   = $${rewardTokenPrice} (from coingecko based 1.0)`);
     _print(`1 ${stakingTokenTicker}   = [${totalSUSDInUniswapPair / totalSupplyOfStakingToken} sUSD, ${totalBASEDInUniswapPair / totalSupplyOfStakingToken} BASED] `);
     _print(`          = $${stakingTokenPrice}\n`);
 
