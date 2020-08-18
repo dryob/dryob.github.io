@@ -4,7 +4,7 @@ $(function() {
 });
 
 async function main() {
-    BASED_TOKEN_ADDR = "0x68A118Ef45063051Eac49c7e647CE5Ace48a68a5"
+    const BASED_TOKEN_ADDR = "0x68A118Ef45063051Eac49c7e647CE5Ace48a68a5";
     const stakingTokenAddr = "0xaAD22f5543FCDaA694B68f94Be177B561836AE57";
     const stakingTokenTicker = "UNIV2";
     const rewardPoolAddr = "0x4fc7e3249A149c0bf729863f49cD2FF468F2412F";
