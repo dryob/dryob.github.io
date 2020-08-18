@@ -6,9 +6,9 @@ $(function () {
 async function main() {
   print_warning();
 
-  const stakingTokenAddr = "0xCF67CEd76E8356366291246A9222169F4dBdBe64";
-  const stakingTokenTicker = "DICE";
-  const rewardPoolAddr = "0xcec3fc05f9314528b5ef324a2e2c47f1d8bed515";
+  const stakingTokenAddr = "0xeBA5D22bBeB146392D032A2F74a735d66A32aeE4";
+  const stakingTokenTicker = "UNI-V2";
+  const rewardPoolAddr = "0x03b42a5e68d5a0bc47ad52d1decf3752d6091264";
   const rewardTokenAddr = "0x38c4102D11893351cED7eF187fCF43D33eb1aBE6";
   const balancerPoolTokenAddr = "0xadceeb763dbd6f9ba7efb7564af2518a7fb49e7b";
   const rewardTokenTicker = "SHRIMP";
@@ -84,12 +84,12 @@ async function main() {
     "shrimp-finance",
     "ethereum",
   ]);
-  const stakingTokenPrice = 78;
+  // const stakingTokenPrice = prices["compound-governance-token"].usd;
+  const stakingTokenPrice = 144;
 
   // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
-//   const rewardTokenPrice = prices["shrimp"].usd;
-  // const rewardTokenPrice = 1.23;
   const rewardTokenPrice = prices["shrimp-finance"].usd;
+  // const rewardTokenPrice = 1.23;
 
   // Finished. Start printing
 
