@@ -11,7 +11,7 @@ async function main() {
     // const rewardTokenAddr = BASED_TOKEN_ADDR;
     const rewardTokenAddr = "0x68A118Ef45063051Eac49c7e647CE5Ace48a68a5";
     const rewardTokenTicker = "BASED";
-
+    const BASED_SUSD_UNI_TOKEN_ADDR = "0xaAD22f5543FCDaA694B68f94Be177B561836AE57"
     const App = await init_ethers();
 
     _print(`Initialized ${App.YOUR_ADDRESS}`);
