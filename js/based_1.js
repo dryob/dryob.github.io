@@ -5,9 +5,9 @@ $(function() {
 
 async function main() {
 
-    const stakingTokenAddr = BASED_SUSD_UNI_TOKEN_ADDR;
+    const stakingTokenAddr = "0xaAD22f5543FCDaA694B68f94Be177B561836AE57";
     const stakingTokenTicker = "UNIV2";
-    const rewardPoolAddr = "0x77caF750cC58C148D47fD52DdDe43575AA179d1f";
+    const rewardPoolAddr = "0x4fc7e3249A149c0bf729863f49cD2FF468F2412F";
     const rewardTokenAddr = BASED_TOKEN_ADDR;
     const rewardTokenTicker = "BASED";
 
