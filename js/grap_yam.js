@@ -8,9 +8,10 @@ async function main() {
     print_warning();
 
 
-    const stakingTokenAddr = YAM_TOKEN_ADDR;
     const stakingTokenTicker = "YAM";
-    const YAM_TOKEN_ADDR = "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB"
+    const YAM_TOKEN_ADDR = "0x0e2298E3B3390e3b945a5456fBf59eCc3f55DA16"
+    const stakingTokenAddr = YAM_TOKEN_ADDR;
+
     const rewardPoolAddr = "0x315F1F88AB9De0BecC20399C3154E4415Bf4d695";
     const rewardTokenAddr = "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB";
     const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
