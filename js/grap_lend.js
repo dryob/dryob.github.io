@@ -83,7 +83,7 @@ async function main() {
   const stakingTokenPrice = prices["ethlend"].usd;
 
   // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
-  const rewardTokenPrice = prices["yam"].usd;
+  const rewardTokenPrice = 1;
 
   // Finished. Start printing
 
