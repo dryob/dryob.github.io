@@ -12,7 +12,7 @@ async function main() {
   const rewardPoolAddr = "0x9F35D827254ecE0C05F166C396eDF2EC1aD6B5cC";
   const rewardTokenAddr = "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB";
   const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
-  const rewardTokenTicker = "YAM";
+  const rewardTokenTicker = "GRAP";
 
   const App = await init_ethers();
 
