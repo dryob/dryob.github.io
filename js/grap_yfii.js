@@ -8,7 +8,7 @@ async function main() {
     print_warning();
 
 
-    const stakingTokenAddr = "YFI_TOKEN_ADDR";
+    const stakingTokenAddr = "0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83";
     const stakingTokenTicker = "YFII";
     const YAM_TOKEN_ADDR = "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB"
     const rewardPoolAddr = "0x559C8C15a3545e6bDAADA6640a02915EA16DA110";
