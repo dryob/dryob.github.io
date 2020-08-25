@@ -8,10 +8,10 @@ async function main() {
     print_warning();
 
 
-    const stakingTokenAddr = "0x38c4102D11893351cED7eF187fCF43D33eb1aBE6";
-    const stakingTokenTicker = "SHRIMP";
+    const stakingTokenAddr = "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e";
+    const stakingTokenTicker = "YFI";
     const YAM_TOKEN_ADDR = "0xd55BD2C12B30075b325Bc35aEf0B46363B3818f8"
-    const rewardPoolAddr = "0x1dD61127758c47Ab95a1931E02D3517f8d0dD1A6";
+    const rewardPoolAddr = "";
     const rewardTokenAddr = "0xd55BD2C12B30075b325Bc35aEf0B46363B3818f8";
     const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
     const rewardTokenTicker = "ZOMBIE";
@@ -55,8 +55,8 @@ async function main() {
     // Look up prices
     // const prices = await lookUpPrices(["yearn-finance"]);
     // const YFIPrice = prices["yearn-finance"].usd;
-    const prices = await lookUpPrices(["shrimp-finance", "ethereum","zombie-finance"]);
-    const stakingTokenPrice = prices["shrimp-finance"].usd;
+    const prices = await lookUpPrices(["yearn-finance", "ethereum","zombie-finance"]);
+    const stakingTokenPrice = prices["yearn-finance"].usd;
 
     // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
     // const rewardTokenPrice = prices["yam"].usd;
