@@ -12,7 +12,7 @@ async function main() {
   const rewardPoolAddr = "0x9F35D827254ecE0C05F166C396eDF2EC1aD6B5cC";
   const rewardTokenAddr = "0xC8D2AB2a6FdEbC25432E54941cb85b55b9f152dB";
   const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
-  const rewardTokenTicker = "GRAP";
+  const rewardTokenTicker = "YAM";
 
   const App = await init_ethers();
 
@@ -79,11 +79,11 @@ async function main() {
   // Look up prices
   // const prices = await lookUpPrices(["yearn-finance"]);
   // const YFIPrice = prices["yearn-finance"].usd;
-  const prices = await lookUpPrices(["ethlend", "ethereum", "yam"]);
+  const prices = await lookUpPrices(["ethlend", "ethereum", "grap-finance"]);
   const stakingTokenPrice = prices["ethlend"].usd;
 
   // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
-  const rewardTokenPrice = 1;
+  const rewardTokenPrice = prices["grap-finance"].usd;
 
   // Finished. Start printing
 

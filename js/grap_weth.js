@@ -55,12 +55,12 @@ async function main() {
     // Look up prices
     // const prices = await lookUpPrices(["yearn-finance"]);
     // const YFIPrice = prices["yearn-finance"].usd;
-    const prices = await lookUpPrices(["compound-governance-token", "ethereum", "yam"]);
+    const prices = await lookUpPrices(["compound-governance-token", "ethereum", "grap-finance"]);
     // const stakingTokenPrice = prices["compound-governance-token"].usd;
     const stakingTokenPrice = prices["ethereum"].usd;
     // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
     // const rewardTokenPrice = prices["yam"].usd;
-    const rewardTokenPrice = 1;
+    const rewardTokenPrice = prices["grap-finance"].usd;
 
     // Finished. Start printing
 
