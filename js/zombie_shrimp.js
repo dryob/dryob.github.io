@@ -55,12 +55,12 @@ async function main() {
     // Look up prices
     // const prices = await lookUpPrices(["yearn-finance"]);
     // const YFIPrice = prices["yearn-finance"].usd;
-    const prices = await lookUpPrices(["shrimp-finance", "ethereum",]);
+    const prices = await lookUpPrices(["shrimp-finance", "ethereum","zombie-finance"]);
     const stakingTokenPrice = prices["shrimp-finance"].usd;
 
     // const rewardTokenPrice = (await YFFI_DAI_BALANCER_POOL.getSpotPrice(LINK_TOKEN_ADDR, rewardTokenAddr) / 1e18) * stakingTokenPrice;
     // const rewardTokenPrice = prices["yam"].usd;
-    const rewardTokenPrice = 100;
+    const rewardTokenPrice = prices["zombie-finance"].usd;
 
     // Finished. Start printing
 
