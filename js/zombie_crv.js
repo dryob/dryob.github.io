@@ -11,7 +11,7 @@ async function main() {
     const stakingTokenAddr = "0xD533a949740bb3306d119CC777fa900bA034cd52";
     const stakingTokenTicker = "CRV";
     const YAM_TOKEN_ADDR = "0xd55BD2C12B30075b325Bc35aEf0B46363B3818f8"
-    const rewardPoolAddr = "";
+    const rewardPoolAddr = "0x6F644562cA3A64CB09c1Fa677a7AA41F5aD49f63";
     const rewardTokenAddr = "0xd55BD2C12B30075b325Bc35aEf0B46363B3818f8";
     const balancerPoolTokenAddr = "0xc7062D899dd24b10BfeD5AdaAb21231a1e7708fE";
     const rewardTokenTicker = "ZOMBIE";
