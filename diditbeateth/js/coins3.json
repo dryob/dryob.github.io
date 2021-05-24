@@ -20,6 +20,7 @@
   { "id": "ethereum-classic", "symbol": "ETC" },
   { "id": "zilliqa", "symbol": "ZIL" },
   { "id": "waves", "symbol": "WAVES" },
+  { "id": "matic-network", "symbol": "MATIC" },
 
   { "id": "algorand", "symbol": "ALGO" },
   { "id": "digibyte", "symbol": "DGB" },
